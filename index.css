@@ -28,8 +28,24 @@ a {
   height: 100px;
   color: #FFFFFF;
   background-color: #202020;
-  margin-bottom: 1em;
   opacity: 1;
+}
+
+nav#menu {
+  background-color: #f67562;
+  display: inline-block;
+  margin: 0 auto;
+  margin-bottom: 1em;
+}
+
+nav#menu a {
+  color: #fff;
+  text-decoration: none;
+  padding: 0 2em 1em;
+}
+
+nav#menu a:not(:first-child) {
+  border-left: 5px solid #fff;
 }
 
 #content {
@@ -43,29 +59,27 @@ a {
 
 #avatar {
   position: relative;
+  display: inline-block;
   margin: 3em 1em 3em 0;
+  left: 40%;
+  float: left;
   width: 200px;
   height: 200px;
   border-radius: 50%;
-  background-image: url('./imgs/james.jpg');
-  background-repeat: no-repeat;
-  background-position: center center;
+  background: url('./imgs/james.jpg') no-repeat center center;
   z-index: 1;
-  -webkit-animation: fadein 2s; /* Safari and Chrome */
+/*  -webkit-animation: fadein 2s; /* Safari and Chrome */
    -moz-animation: fadein 2s; /* Firefox */
     -ms-animation: fadein 2s; /* Internet Explorer */
      -o-animation: fadein 2s; /* Opera */
-        animation: fadein 2s;
+        animation: fadein 2s;*/
 }
 
-h1 {
-}
-
-#avatar:hover {
-  z-index: 2;
-  opacity: .9;
-  color: #02fffe;
-  background-color: #202020;
+#summary {
+  display: inline-block;
+  float: left;
+  font-size: 1em;
+  margin-top: 100px;
 }
 
 @keyframes fadein {
@@ -96,10 +110,6 @@ h1 {
     from { opacity: 0; left: 50%; }
     to   { opacity: 1; left: 0; }
 }​
-
-#summary {
-  font-size: 1.5em;
-}
 
 @media screen and (max-width: 640px) {
   body {
