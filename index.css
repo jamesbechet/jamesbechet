@@ -6,7 +6,7 @@
 body {
   background-color: #FFFFFF;
   font-family: 'Century Gothic', 'Arial', sans-serif;
-  font-size: 24px;
+  font-size: 18px;
   font-weight: 100;
   font-style: normal;
   text-align: center;
@@ -15,7 +15,7 @@ body {
 h1 {
   width: 100%;
   height: 1.4em;
-  font-size: 3em;
+  font-size: 4em;
   font-weight: 100;
 }
 
@@ -48,9 +48,11 @@ nav#menu a {
   padding: .2em 1em;
   background-color: #1fc0f1;
   display: inline-block;
+  font-size: 1.5em;
 }
 
 div#content {
+  position: relative;
   width: 80%;
   height: 80%;
   color: #202020;
@@ -61,17 +63,23 @@ div#content {
 
 div#avatar {
   position: relative;
-  /*display: inline-block;*/
-  /*margin: 3em auto 1em;*/
   margin: 3em 0 1em 0;
   left: 40%;
-  /*float: left;*/
   width: 200px;
   height: 200px;
   border-radius: 50%;
   border: 3px solid #1fc0f1;
   background: url('./imgs/james.jpg') no-repeat center center;
   z-index: 1;
+}
+
+p#desc {
+  opacity: 0;
+  display: inline-block;
+  position: absolute;
+  left: 30%;
+  top: 1em;
+  text-align: left;
 }
 
 .translate {
@@ -97,13 +105,6 @@ div#avatar {
   -ms-animation-fill-mode: forwards; /*IE 10+*/
   -o-animation-fill-mode: forwards; /*Not implemented yet*/
   animation-fill-mode: forwards; /*when the spec is finished*/
-}
-
-#summary {
-  display: inline-block;
-  float: left;
-  font-size: 1em;
-  margin-top: 100px;
 }
 
 @keyframes translate {

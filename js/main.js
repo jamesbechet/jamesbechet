@@ -1,9 +1,7 @@
 $(document).ready(function()
 {
-  $('#desc').click(function () {
+  $('#desc-button').click(function () {
     $('#avatar').addClass('translate');
-  })
-  $('#contact').click(function () {
-    $('#avatar').addClass('translate');
+    $('#desc').addClass('fadeIn');
   })
 });
