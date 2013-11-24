@@ -3,10 +3,11 @@
   padding: 0;
 }
 
-body,
-html {
-  width: 100%;
-  height: 100%;
+html{
+  min-height: 100%;
+}
+body {
+  min-height: 100%;
 }
 
 body {
@@ -102,13 +103,13 @@ div#profile {
 p#desc {
   display: inline-block;
   position: absolute;
+  overflow: hidden;
+  word-wrap: break-word;
+  text-align: justify;
 }
 
 
 @media (min-width: 320px) {
-  body {
-    font-size: 30px;
-  }
   p#desc {
     opacity: 1;
     text-align: center;
@@ -118,16 +119,24 @@ p#desc {
   }
 }
 
-@media only screen and (min-device-width : 768px) and (max-device-width : 1024px) and (orientation : landscape) {
-  p#desc {
-    left: 37%;
-    top: 1em;
-    text-align: left;
-    opacity: 0;
+@media (max-width: 1024px) {
+  body {
+    font-size: 30px;
   }
 }
 
-@media (max-width: 1024px) {
+@media only screen and (min-device-width : 768px) and (max-device-width : 1024px) and (orientation : landscape) {
+  p#desc {
+    left: 40%;
+    top: 1em;
+    font-size: .8em;
+    opacity: 0;
+    max-width: 30em;
+    text-align: justify;
+  }
+}
+
+@media only screen and (min-device-width : 768px) and (max-device-width : 1024px) {
   body {
     font-size: 22px;
   }
@@ -140,7 +149,7 @@ p#desc {
   p#desc {
     left: 37%;
     top: 1em;
-    text-align: left;
+    text-align: justify;
     opacity: 0;
   }
 }
