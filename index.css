@@ -70,6 +70,11 @@ nav#menu a {
   font-size: 1.5em;
 }
 
+nav#menu a:active,
+nav#menu a:hover {
+  color: #202020;
+}
+
 div#content {
   position: relative;
   width: 100%;

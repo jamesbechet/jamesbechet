@@ -6,4 +6,20 @@ $(document).ready(function()
       $('#desc').addClass('fade-in');
     }
   })
+
+  function doOnOrientationChange()
+  {
+    switch (window.orientation) 
+    {  
+      case -90:
+      case 90: // Landscape
+        $('#desc').hasClass('fade-in') && $('#desc').removeClass('fade-in');
+        break; 
+      default: // Portrait
+        $('#profile').hasClass('translate') && $('#profile').removeClass('translate');
+        break; 
+    }
+  }
+  window.addEventListener('orientationchange', doOnOrientationChange);
+
 });
