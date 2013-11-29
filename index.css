@@ -76,7 +76,7 @@ nav#menu a:hover {
 }
 
 div#social {
-  margin: 0 auto 3em;
+  margin: 0 auto;
 }
 
 div#social a {
@@ -92,7 +92,7 @@ div#content {
   width: 100%;
   color: #202020;
   font-size: 1em;
-  margin: 9em 0 1em 0;
+  margin: 15em 0 1em 0;
   text-align: center;
 }
 
@@ -132,10 +132,19 @@ p#desc {
     text-align: center;
     left: 0;
     width: 100%;
-    top: 16em;
+    top: 12em;
   }
+
   nav#menu a:nth-child(2) {
     color: #202020;
+  }
+
+  div#social {
+    margin: 0 auto;
+  }
+
+  div#social img {
+    width: 100%;
   }
 }
 
@@ -148,7 +157,7 @@ p#desc {
 @media only screen and (min-device-width : 768px) and (max-device-width : 1024px) and (orientation : landscape) {
   p#desc {
     left: 40%;
-    top: 1em;
+    top: .5em;
     font-size: .8em;
     opacity: 0;
     max-width: 30em;
@@ -163,6 +172,10 @@ p#desc {
   body {
     font-size: 22px;
   }
+
+  div#social img {
+    width: 70%;
+  }
 }
 
 @media (min-width : 1224px) {
@@ -172,13 +185,18 @@ p#desc {
 
   p#desc {
     left: 37%;
-    top: 5em;
+    top: .5em;
     text-align: justify;
     opacity: 0;
     max-width: 35em;
   }
+
   nav#menu a:nth-child(2) {
     color: #fff;
+  }
+
+  div#social img {
+    width: 50%;
   }
 }
 
