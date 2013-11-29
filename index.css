@@ -143,6 +143,10 @@ p#desc {
     margin: 0 auto;
   }
 
+  div#social a:nth-child(2) {
+    margin: 0 2em;
+  }
+
   div#social img {
     width: 100%;
   }
