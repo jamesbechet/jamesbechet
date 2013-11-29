@@ -75,12 +75,24 @@ nav#menu a:hover {
   color: #202020 !important;
 }
 
+div#social {
+  margin: 0 auto 2em;
+}
+
+div#social a {
+  display: inline-block;
+}
+
+div#social img {
+  width: 50%;
+}
+
 div#content {
   position: relative;
   width: 100%;
   color: #202020;
   font-size: 1em;
-  margin: 12em 0 1em 0;
+  margin: 8em 0 1em 0;
   text-align: center;
 }
 
