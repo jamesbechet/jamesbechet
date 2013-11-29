@@ -76,7 +76,7 @@ nav#menu a:hover {
 }
 
 div#social {
-  margin: 0 auto 2em;
+  margin: 0 auto 3em;
 }
 
 div#social a {
@@ -92,7 +92,7 @@ div#content {
   width: 100%;
   color: #202020;
   font-size: 1em;
-  margin: 8em 0 1em 0;
+  margin: 9em 0 1em 0;
   text-align: center;
 }
 
@@ -132,7 +132,7 @@ p#desc {
     text-align: center;
     left: 0;
     width: 100%;
-    top: 12em;
+    top: 16em;
   }
   nav#menu a:nth-child(2) {
     color: #202020;
@@ -172,7 +172,7 @@ p#desc {
 
   p#desc {
     left: 37%;
-    top: 1em;
+    top: 5em;
     text-align: justify;
     opacity: 0;
     max-width: 35em;
