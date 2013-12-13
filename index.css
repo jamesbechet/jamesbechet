@@ -11,7 +11,7 @@ body {
 }
 
 body {
-  background-color: #FFFFFF;
+  background-color: #fff;
   font-family: 'Century Gothic', 'Arial', sans-serif;
   font-size: 18px;
   font-weight: 100;
@@ -36,7 +36,14 @@ a {
 }
 
 b {
-  font-size: 1.2em;
+  font-size: 2em;
+}
+ul {
+  list-style: none;
+}
+
+li {
+  display: inline-block;
 }
 
 #top {
@@ -50,29 +57,43 @@ b {
   width: 100%;
   height: 5em;
   color: #fff;
-  background-color: #202020;
+  background-color: #313a46;
   opacity: 1;
 }
 
-nav#menu {
-  margin: 0 auto 1em;
-  margin-bottom: 1em;
-  display: block;
+div#content {
   position: relative;
+  width: 100%;
+  color: #202020;
+  font-size: 1em;
+  margin: 10em 0 1em 0;
+  text-align: center;
 }
 
-nav#menu a {
-  color: #fff;
-  text-decoration: none;
-  padding: .2em 1em;
-  background-color: #1fc0f1;
+
+div#profile {
+  position: relative;
   display: inline-block;
-  font-size: 1.5em;
+  width: 350px;
+  height: 350px;
+  float: left;
+  margin-left: 15em;
+  border-right: 1px solid #202020;
 }
 
-nav#menu a.active,
-nav#menu a:hover {
-  color: #202020 !important;
+p#title b {
+  font-size: 1.6em;
+}
+
+div#avatar {
+  position: relative;
+  display: inline-block;
+  width: 200px;
+  height: 200px;
+  margin: 1em 0 2em;
+  border-radius: 50%;
+  background: url('./imgs/james.jpg') no-repeat center center;
+  z-index: 1;
 }
 
 div#social {
@@ -87,123 +108,35 @@ div#social img {
   width: 50%;
 }
 
-div#content {
-  position: relative;
-  width: 100%;
-  color: #202020;
-  font-size: 1em;
-  margin: 15em 0 1em 0;
-  text-align: center;
-}
-
-div#avatar {
-  position: relative;
-  display: inline-block;
-  width: 200px;
-  height: 200px;
-  border-radius: 50%;
-  border: 3px solid #1fc0f1;
-  background: url('./imgs/james.jpg') no-repeat center center;
-  z-index: 1;
-}
-
-p#title {
-  display: inline-block;
-}
-
-div#profile {
-  position: relative;
-  display: inline-block;
-  max-width: 250px;
-}
-
 p#desc {
   display: inline-block;
-  position: absolute;
-  overflow: hidden;
-  word-wrap: break-word;
   text-align: justify;
+  width: 700px;
 }
 
-
-@media (min-width: 320px) {
-  p#desc {
-    opacity: 1;
-    text-align: center;
-    left: 0;
-    width: 100%;
-    top: 12em;
-  }
-
-  nav#menu a:nth-child(2) {
-    color: #202020;
-  }
-
-  div#social {
-    margin: 0 auto;
-  }
-
-  div#social a:nth-child(2) {
-    margin: 0 2em;
-  }
-
-  div#social img {
-    width: 100%;
-  }
+#links {
+  margin-top: 50px;
+  display: inline-block;
 }
 
-@media (max-width: 1024px) {
-  body {
-    font-size: 30px;
-  }
+#links a:first-child {
+  margin-right: 100px;
 }
 
-@media only screen and (min-device-width : 768px) and (max-device-width : 1024px) and (orientation : landscape) {
-  p#desc {
-    left: 40%;
-    top: 0;
-    font-size: .8em;
-    opacity: 0;
-    max-width: 30em;
-    text-align: justify;
-  }
-  nav#menu a:nth-child(2) {
-    color: #fff;
-  }
+#links a {
+  display: inline-block;
+  position: relative;
+  width: 10em;
+  height: 3em;
+  line-height: 3em;
+  color: #fff;
+  background-color: #313a46;
+  border-bottom: 5px solid #00bcda;
 }
 
-@media only screen and (min-device-width : 768px) and (max-device-width : 1024px) {
-  body {
-    font-size: 22px;
-  }
-
-  div#social img {
-    width: 70%;
-  }
+#links a:hover {
+  top: 2px;
 }
-
-@media (min-width : 1224px) {
-  body {
-    font-size: 18px;
-  }
-
-  p#desc {
-    left: 37%;
-    top: .5em;
-    text-align: justify;
-    opacity: 0;
-    max-width: 35em;
-  }
-
-  nav#menu a:nth-child(2) {
-    color: #fff;
-  }
-
-  div#social img {
-    width: 50%;
-  }
-}
-
 
 /* Scrollbar */
 
@@ -213,90 +146,5 @@ p#desc {
 
 ::-webkit-scrollbar-thumb {
     border-radius: 0;
-    background-color: #1fc0f1;    
+    background-color: #202020;    
 }
-
-/* Animations */
-.translate {
-  -webkit-animation: translate 2s; /* Safari and Chrome */
-  -moz-animation: translate 2s; /* Firefox */
-  -ms-animation: translate 2s; /* Internet Explorer */
-  -o-animation: translate 2s; /* Opera */
-  animation: translate 2s;
-}
-
-.fade-in {
-  -webkit-animation: fadeIn 1s; /* Safari and Chrome */
-  -moz-animation: fadeIn 1s; /* Firefox */
-  -ms-animation: fadeIn 1s; /* Internet Explorer */
-  -o-animation: fadeIn 1s; /* Opera */
-  animation: fadeIn 1s;
-}
-
-.translate,
-.fade-in {
-  -webkit-animation-fill-mode: forwards; /*Chrome 16+, Safari 4+*/
-  -moz-animation-fill-mode: forwards; /*FF 5+*/
-  -ms-animation-fill-mode: forwards; /*IE 10+*/
-  -o-animation-fill-mode: forwards; /*Not implemented yet*/
-  animation-fill-mode: forwards; /*when the spec is finished*/
-}
-
-@keyframes translate {
-    from { left: 0; }
-    to   { left: -20%; }
-}
-
-/* Firefox */
-@-moz-keyframes translate {
-    from { left: 0; }
-    to   { left: -25%; }
-}
-
-/* Safari and Chrome */
-@-webkit-keyframes translate {
-    from { left: 0; }
-    to   { left: -25%; }
-}
-
-/* Internet Explorer */
-@-ms-keyframes translate {
-    from { left: 0; }
-    to   { left: -25%; }
-}​
-
-/* Opera */
-@-o-keyframes translate {
-    from { left: 0; }
-    to   { left: -25%; }
-}​
-
-
-@keyframes fadeIn {
-    from { opacity: 0; }
-    to   { opacity: 1; }
-}
-
-/* Firefox */
-@-moz-keyframes fadeIn {
-    from { opacity: 0; }
-    to   { opacity: 1; }
-}
-
-/* Safari and Chrome */
-@-webkit-keyframes fadeIn {
-    from { opacity: 0; }
-    to   { opacity: 1; }
-}
-
-/* Internet Explorer */
-@-ms-keyframes fadeIn {
-    from { opacity: 0; }
-    to   { opacity: 1; }
-}​
-
-/* Opera */
-@-o-keyframes fadeIn {
-    from { opacity: 0; }
-    to   { opacity: 1; }
-}​
