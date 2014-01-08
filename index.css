@@ -11,7 +11,7 @@ html, body{
 
 body {
   background-color: #fdfdfd;
-  font-family: 'Avenir', 'Times Roman', 'Century Gothic', 'Arial', sans-serif;
+  font-family: 'Avenir', 'Nunito', 'Century Gothic', 'Arial', sans-serif;
   font-size: 18px;
   font-weight: 100;
   font-style: normal;
@@ -44,6 +44,7 @@ li {
 
 #top-bar {
   width: 100%;
+  overflow: hidden;
   height: 5em;
   background-color: #fff;
   border-bottom: 2px solid #129ff1;
