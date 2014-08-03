@@ -28,11 +28,21 @@ a {
   color: #fff;
 }
 
+@media only screen and (max-width : 620px) {
+  main {
+    font-size: .8em;
+  }
+}
+
 main {
   min-height: 400px;
   width: 100%;
   color: #fff;
 }
+
+
+
+/* All divs */
 
 div.section {
   width: 100%;
@@ -67,6 +77,10 @@ div.section div.content img {
   margin-bottom: 1.5em;
 }
 
+
+
+/* Jolicloud Logo */
+
 div#jolicloud div.content {
   padding: 10em 2em 3em;
 }
@@ -74,6 +88,31 @@ div#jolicloud div.content {
 div#jolicloud div.content img {
   height: 100px;
   margin-bottom: 9em;
+}
+
+
+
+/* With picture */
+
+div#me {
+  height: 800px;
+}
+
+div#me div.blur {
+  opacity: 0;
+}
+
+div#me div.profile {
+  position: fixed;
+  background-position: center;
+  background-size: cover;
+  -webkit-background-size: cover;
+  background-repeat: no-repeat;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  z-index: -1;
 }
 
 div#me div.content {
@@ -91,14 +130,9 @@ div#me div.content h2 {
   font-weight: 300;
 }
 
-div#me {
-  height: 800px;
-  background-image: url(http://localhost/~jamesbechet/jamesbechet/img/james.jpg);
-  background-size: cover;
-  background-position: 50% 50%;
-  background-repeat: no-repeat;
-}
 
+
+/* Companies */
 div#gymaholic {
   background-color: #191919;
 }
