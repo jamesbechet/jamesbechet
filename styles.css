@@ -46,12 +46,18 @@ div.section div.content {
 }
 
 div.section div.content h3 {
+  font-size: 3em;
+  font-weight: 500;
+  margin-bottom: .5em;
+}
+
+div.section div.content h4 {
   font-size: 2em;
   font-weight: 400;
   margin-bottom: .5em;
 }
 
-div.section div.content h4 {
+div.section div.content h5 {
   font-size: 1.5em;
   font-weight: 300;
 }
@@ -67,6 +73,7 @@ div#jolicloud div.content {
 
 div#jolicloud div.content img {
   height: 100px;
+  margin-bottom: 9em;
 }
 
 div#me div.content {
