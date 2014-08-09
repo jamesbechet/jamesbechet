@@ -12,7 +12,8 @@
 html, body {
   display: block;
   width: 100%;
-  overflow: hidden;
+  overflow-x: hidden;
+  overflow-y: scroll;
 }
 
 body {
@@ -49,6 +50,7 @@ main {
 div.section {
   width: 100%;
   height: 650px;
+  padding: 0 5%;
 }
 
 div.section div.content {
@@ -77,6 +79,7 @@ div.section div.content h5 {
 div.section div.content img {
   height: 300px;
   margin-bottom: 1.5em;
+  max-width: 100%;
 }
 
 
