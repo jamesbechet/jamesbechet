@@ -116,7 +116,7 @@ div#me div.profile {
 }
 
 div#me div.content {
-  padding: 40em 2em 3em;
+  padding: 37em 2em 3em;
 }
 
 div#me div.content h1 {
@@ -127,10 +127,30 @@ div#me div.content h1 {
 
 div#me div.content h2 {
   font-size: 2em;
+  margin-bottom: .5em;
   font-weight: 300;
 }
 
+div#me div.content ul#socials li {
+  display: inline-block;
+}
 
+div#me div.content ul#socials li:nth-child(2) {
+  margin: 0 1em;
+}
+
+div#me div.content ul#socials li path {
+  fill: #fff;
+  -webkit-transition: fill .3s ease-in-out;
+  -moz-transition: fill .3s ease-in-out;
+  -ms-transition: fill .3s ease-in-out;
+  -o-transition: fill .3s ease-in-out;
+  transition: fill .3s ease-in-out;
+}
+
+div#me div.content ul#socials li:hover path {
+  fill: #191919;
+}
 
 /* Companies */
 div#gymaholic {
