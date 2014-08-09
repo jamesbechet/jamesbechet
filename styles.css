@@ -77,7 +77,7 @@ div.section div.content h5 {
 }
 
 div.section div.content img {
-  height: 300px;
+  max-height: 300px;
   margin-bottom: 1.5em;
   max-width: 100%;
 }
@@ -91,7 +91,7 @@ div#jolicloud div.content {
 }
 
 div#jolicloud div.content img {
-  height: 100px;
+  max-height: 100px;
   margin-bottom: 9em;
 }
 
