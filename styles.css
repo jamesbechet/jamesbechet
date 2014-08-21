@@ -74,6 +74,12 @@ div.section div.content h4 {
 div.section div.content h5 {
   font-size: 1.5em;
   font-weight: 300;
+  margin-bottom: 1em;
+}
+
+div.section div.content h6 {
+  font-size: 1.1em;
+  font-weight: 400;
 }
 
 div.section div.content img {
@@ -142,6 +148,10 @@ div#me div.content ul#socials li {
 
 div#me div.content ul#socials li:nth-child(2) {
   margin: 0 1em;
+}
+
+div#me div.content ul#socials li:nth-child(3) {
+  margin-right: 1em;
 }
 
 div#me div.content ul#socials li path {
