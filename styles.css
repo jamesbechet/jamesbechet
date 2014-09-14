@@ -43,7 +43,9 @@ main {
   color: #fff;
 }
 
-
+svg {
+  height: 32px;
+}
 
 /* All divs */
 
@@ -147,10 +149,10 @@ div#me div.content ul#socials li {
 }
 
 div#me div.content ul#socials li:nth-child(2) {
-  margin: 0 1em;
+  margin-left: 1em;
 }
 
-div#me div.content ul#socials li:nth-child(3) {
+div#me div.content ul#socials li:nth-child(4) {
   margin-right: 1em;
 }
 
