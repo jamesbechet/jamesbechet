@@ -152,6 +152,10 @@ div#me div.content ul#socials li:nth-child(2) {
   margin-left: 1em;
 }
 
+div#me div.content ul#socials li:nth-child(3) {
+  margin: 0 1em;
+}
+
 div#me div.content ul#socials li:nth-child(3) svg {
   width: 42px;
 }
