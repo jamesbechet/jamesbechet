@@ -1,3 +1,3 @@
 # Jamesbechet - My Personal Website
 
-Just thought a Readme had to be done.
+James Bechet is a dreamer, doer, software maker and fitness lover. Dream big, live bigger.
