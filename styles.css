@@ -62,7 +62,7 @@ main {
 
 .avatar {
 
-  height              : 200px;
+  min-height          : 200px;
   width               : 200px;
   border-radius       : 50%;
 
@@ -83,3 +83,11 @@ h2 {
   padding-bottom : 1em;
   font-weight    : 300;
 }
+
+h3 {
+
+}
+
+  h3 span {
+    padding : 0 10px;
+  }
