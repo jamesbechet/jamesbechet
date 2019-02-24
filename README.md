@@ -1,4 +1,4 @@
 # James Bechet
 ## My Personal Website
 
-[jamesbechet.com](http://jamesbechet.com/)
+[http://jamesbechet.github.io/jamesbechet/](http://jamesbechet.github.io/jamesbechet/)
